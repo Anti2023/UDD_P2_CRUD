@@ -13,7 +13,7 @@ que permita crear una lista de compras.
 
 ## Uso
 
-Es un proyecto simple. Solo se debe ingresar en el campo producto, los productos que uno desea comprar y en el precio el monto que uno desea gastar y agregarlos de manera que se irá conformando una lista.
+Es un proyecto simple. Solo se debe ingresar en el campo producto, los productos que uno desea comprar y en el precio el monto que uno desea gastar y agregarlos de manera que se irá conformando una lista en la que cada uno de los productos podrá ser editado y/o eliminado.
 
    ![Captura de pantalla 2023-08-11 210206](https://github.com/Anti2023/UDD_P2_CRUD/assets/123422234/6eabf7e1-3c5b-4560-b3d0-f5e9042c5db3)
 
