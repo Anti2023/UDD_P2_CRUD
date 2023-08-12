@@ -7,28 +7,20 @@ Proyecto 2 bootcamp UDD DWFS
 Este es el segundo proyecto del bootcamp : un CRUD. La idea es aplicar los conocimientos adquiridos de Javascript. Para este proyecto escogí hacer un CRUD
 que permita crear una lista de compras.
 
-- ¿Cuál fue su motivación?
-- ¿Por qué desarrolló este proyecto? (Nota: La respuesta no es “Porque fue una asignación de tarea”.)
-- ¿Qué problema resuelve?
-- ¿Qué aprendió?
-
 ## Instalación
 
 ¿Cuáles son los pasos necesarios para instalar su proyecto? Proporcione una descripción paso a paso de cómo poner en funcionamiento el entorno de desarrollo.
 
 ## Uso
 
-Proporcione instrucciones y ejemplos de uso. Incluya capturas de pantalla según sea necesario.
+Es un proyecto simple. Solo se debe ingresar en el campo producto, los productos que uno desea comprar y agregarlos de manera que se irá conformando una lista
 
-Para agregar una captura de pantalla, cree una carpeta `assets/images` en su repositorio y cargue la captura de pantalla en ella. Luego, con la ruta relativa, agréguela a su README utilizando la siguiente sintaxis:
-
-    ```md
-    ![alt text](assets\img\Captura de pantalla 2023-08-11 210206.png)
-    ```
+   ![Captura de pantalla 2023-08-11 210206](https://github.com/Anti2023/UDD_P2_CRUD/assets/123422234/6eabf7e1-3c5b-4560-b3d0-f5e9042c5db3)
 
 ## Crédito
 
 Enumere sus colaboradores, si los hubiera, con enlaces a sus perfiles de GitHub.
+
 
 Si utilizó activos de terceros que requieren autoría, enumere los creadores con enlaces a su presencia web principal en esta sección.
 
