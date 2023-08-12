@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    width: auto;
+    margin: auto;
+    color: white;
+    background: radial-gradient(circle at 90%, pink, violet);
+    background-position: right;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    color: #ffffff;
+    background-color: #1fa02e;
+    text-align: left;
+    padding: 20px 0;
+}
+
+#dataTable th {
+    color: purple;
+}
+
+
+main {
+    flex: 1;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #1fa02e;
+    text-align: center;
+}
+
+footer nav.links ul li a {
+    color: white;
+}
+
+
