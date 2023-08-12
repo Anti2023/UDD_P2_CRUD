@@ -21,7 +21,7 @@ Es un proyecto simple. Solo se debe ingresar en el campo producto, los productos
 
 HTML, CSS, JAVASCRIPT(funciones, arreglos, métodos, POO, DOM, etc)
 
-## Complementos usados
+## Herramientas usadas
 
 - Bootstrap
 - Googlefonts
