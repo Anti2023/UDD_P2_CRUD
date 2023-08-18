@@ -1,18 +1,20 @@
-const form = document.querySelector('.form');
+const form = document.getElementById('form');
 const inputProduct = document.getElementById('inputProduct');
 const inputPrice = document.getElementById('inputPrice');
 const dataTable = document.getElementById('dataTable');
 
-form.addEventListener('submit', function (event) {
+let productList = [];
+
+function onSubmit(event) {
     event.preventDefault();
     const productValue = inputProduct.value.trim();
     const priceValue = parseFloat(inputPrice.value);
     // validaciones para no ingresar campos vacíos
     if (productValue === '') {
-        alert('El campo es obligatorio');
+        alert('El campo "Producto" es obligatorio');
         return false;
     } else if (isNaN(priceValue)) {
-        alert('El campo es obligatorio');
+        alert('El campo "Precio" es obligatorio');
         return false;
     }
 
@@ -22,7 +24,7 @@ form.addEventListener('submit', function (event) {
     };
 
     // Agregar a Local Storage
-    let productList = JSON.parse(localStorage.getItem('productList')) || [];
+    // let productList = JSON.parse(localStorage.getItem('productList')) || [];
     productList.push(data);
     localStorage.setItem('productList', JSON.stringify(productList));
 
@@ -42,7 +44,9 @@ form.addEventListener('submit', function (event) {
     // Limpiar los campos de entrada
     inputProduct.value = '';
     inputPrice.value = '';
-});
+}
+
+form.addEventListener('submit', onSubmit);
 
 function editRow(button) {
     const row = button.closest('tr');
@@ -58,7 +62,7 @@ function editRow(button) {
     dataTable.deleteRow(row.rowIndex);
 
     // Actualizar Local Storage
-    let productList = JSON.parse(localStorage.getItem('productList'));
+    // let productList = JSON.parse(localStorage.getItem('productList'));
     productList = productList.filter(item => item.product !== product);
     localStorage.setItem('productList', JSON.stringify(productList));
 }
@@ -68,18 +72,18 @@ function deleteRow(button) {
     const productCell = row.cells[0];
     const product = productCell.textContent;
 
-    
+
     dataTable.deleteRow(row.rowIndex);
 
-    
-    let productList = JSON.parse(localStorage.getItem('productList'));
+
+    // let productList = JSON.parse(localStorage.getItem('productList'));
     productList = productList.filter(item => item.product !== product);
     localStorage.setItem('productList', JSON.stringify(productList));
 }
 
 // Cargar los datos al cargar la página
 window.addEventListener('load', function () {
-    let productList = JSON.parse(localStorage.getItem('productList')) || [];
+    productList = JSON.parse(localStorage.getItem('productList')) || [];
 
     productList.forEach(item => {
         const row = dataTable.insertRow();
